@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #f7f6f3;
+  --surface: #efeee9;
+  --ink: #1c1917;
+  --muted: #57534e;
+  --border: #e7e5e4;
+  --accent: #0f766e;
+  --accent-soft: #ccfbf1;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: "Fraunces", Georgia, serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(15, 118, 110, 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(180, 83, 9, 0.05), transparent),
+    var(--bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--accent);
+  color: white;
+  padding: 0.55rem 1rem;
+  font-size: 0.925rem;
+  font-weight: 600;
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #0d9488;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--ink);
+  padding: 0.55rem 1rem;
+  font-size: 0.925rem;
+  font-weight: 500;
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: var(--surface);
+}
+
+.btn-secondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.prose-section {
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  background: white;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.prose-section h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.75rem;
+}
+
+.prose-section p,
+.prose-section li {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.prose-section ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.prose-section code {
+  color: var(--ink);
+  font-size: 0.85em;
+}

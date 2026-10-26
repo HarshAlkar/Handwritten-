@@ -1,0 +1,53 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg
+
+# Environment
+.env
+.env.local
+
+# ML artifacts (large / regenerable)
+ML/artifacts/*.keras
+ML/artifacts/*.h5
+ML/artifacts/checkpoints/
+*.ckpt
+
+# Keep metrics/history if small; ignore large binary dumps
+*.npy
+*.npz
+*.pb
+
+# Node / Frontend
+Frontend/node_modules/
+Frontend/dist/
+Frontend/coverage/
+*.log
+npm-debug.log*
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Hugging Face / caches
+.cache/
+**/huggingface/
+.huggingface/
+
+# Matplotlib
+matplotlibrc
+*.png.bak

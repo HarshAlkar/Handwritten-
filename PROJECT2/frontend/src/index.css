@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,550;9..144,650&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #f7f6f3;
+  --surface: #efeee9;
+  --ink: #1c1917;
+  --muted: #57534e;
+  --border: #e7e5e4;
+  --accent: #0f766e;
+  --accent-soft: #ccfbf1;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+.font-display {
+  font-family: "Fraunces", Georgia, serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(ellipse 70% 40% at 0% 0%, rgba(15, 118, 110, 0.07), transparent),
+    var(--bg);
+}
+
+.card {
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  background: white;
+  padding: 1.25rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.input {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background: white;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--accent);
+  color: white;
+  padding: 0.55rem 1rem;
+  font-size: 0.925rem;
+  font-weight: 600;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #0d9488;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--ink);
+  padding: 0.55rem 1rem;
+  font-size: 0.925rem;
+  font-weight: 500;
+}
+
+.btn-secondary:hover {
+  background: var(--surface);
+}
+
+.alert-error {
+  border-radius: 0.5rem;
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #991b1b;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.prose-block h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.2rem;
+  margin: 0 0 0.75rem;
+}
+
+.prose-block p,
+.prose-block li {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.prose-block ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.4rem;
+}

@@ -1,0 +1,2 @@
+# Same dependencies as the backend (shared ML + API stack)
+-r ../Backend/requirements.txt
